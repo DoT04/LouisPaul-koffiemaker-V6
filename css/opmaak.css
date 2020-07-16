@@ -1,0 +1,633 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+
+
+/* /* variables */
+/*  root{
+    
+    --llgrijs:#EEEEEE;
+    --lgrijs: #BCBCBC;
+    --mgrijs: #787878;
+    --dgrijs: #4B4E53;
+    --zwart: #2A2A2A;
+} */
+
+:root {
+    --animate-duration: 15s;
+    --animate-delay: 5s;
+}
+
+* body {
+    font: 300 100%/1.6 Lato, Arial, sans-serif;
+    background: #FFFFFF;
+
+    overflow-x: hidden;
+    /* scrollbalk wegdoen in mobile */
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.page-section {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.responsive-image {
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.relative {
+    position: relative;
+}
+
+a {
+    outline: none !important;
+
+    text-decoration: none;
+    transition: all .3s ease 0s;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* Navigatie ------------------------------------------- */
+/* hamburger */
+a[href="#menu"] {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: block;
+
+    color: #2A2A2A;
+    width: 60px;
+    height: 60px;
+    font: 400 1.5rem/60px Lato, Arial, sans-serif;
+    text-align: center;
+    transition: all 500ms;
+
+}
+
+a[href="#menu"]:hover {
+    background: #787878;
+}
+
+/* nav-elementen */
+
+nav.mainnav {
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    right: 0;
+}
+
+.links {
+    position: absolute;
+    top: 0;
+    /* right normaal 0 om zichtbaar te zijn */
+    right: -255;
+    background: rgba(75, 75, 83, .7);
+    width: 250px;
+    height: 100vh;
+    padding: 6em 10px 10px;
+    transition: right 500ms ease-in-out;
+    text-align: left;
+}
+
+.links a {
+    display: block;
+    background: #2A2A2A;
+    padding: .5em;
+    margin-bottom: .5em;
+    color: #F1F1F1;
+    text-decoration: none;
+    transition: all 500ms;
+
+}
+
+.links a:hover {
+    background: #666;
+    color: #F1F1F1;
+}
+
+/* nodig voor JS */
+.open {
+    right: 0;
+}
+
+/* mainheader */
+
+.mainheader .overlay {
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #F1F1F1;
+    height: 100vh;
+    padding-left: 1em;
+}
+
+
+.overlay h1 {
+    font: 9rem "Yeseva one", cursive;
+    padding-top: 2.5em;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.icon {
+    padding-left: .8em;
+    padding: 5em;
+
+}
+
+.iconcont {
+    text-align: center;
+}
+
+
+.icontitel {
+    text-align: center;
+    font: 300 3rem/1.6 Lato, Arial, sans-serif;
+}
+
+
+.overlay-titel {
+    font: 200 3rem/1.6 Lato, Arial, sans-serif;
+    letter-spacing: .2em;
+    color: #F1F1F1;
+    margin-left: 4em;
+    text-transform: uppercase;
+
+
+}
+
+
+
+
+/* FAQ
+/* --------------------------------------------------------*/
+
+.faq-section {
+    padding: 110px 0;
+    background-color: #4b4e53;
+
+
+
+
+}
+
+
+.card {
+    margin-bottom: 1em;
+    background-color: #FFFFFF
+}
+
+.collapse {
+    display: block;
+    position: relative;
+    color: #7e8082;
+    text-decoration: none;
+
+
+
+
+}
+
+.card-header {
+
+    margin: 0;
+    border: none;
+}
+
+.faq-titel {
+    margin: 0;
+    padding: 22px 25px;
+    font: 300 2rem/1.6 Lato, Arial, sans-serif;
+    color: #EEEEEE;
+    border-left: 2px solid
+}
+
+#faq a {
+    color: #4b4e53;
+    text-decoration: none;
+}
+
+.fa-angle-down:before {
+    font-size: 1rem;
+    color: #4b4e53;
+}
+
+
+/* AD
+--------------------------------------------------------*/
+.ad {
+    background: #EEEEEE;
+}
+
+.text-cont-left {
+    margin: 0 auto;
+    padding: 145px 50px 140px 50px;
+    max-width: 50%;
+}
+
+.text-cont-right {
+
+    padding: 145px 50px 140px 50px;
+    max-width: 50%;
+    height: auto;
+}
+
+.title-ad {
+    color: #4b4e53;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 300;
+}
+
+.lijn {
+    margin-top: 15px;
+    height: 3px;
+    width: 100px;
+    background: #4b4e53;
+}
+
+.text-cont p {
+    margin-top: 30px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+
+
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.ads-img-cont {
+    padding-top: 50px;
+    padding-bottom: 45px;
+
+}
+
+.img-fluid {
+
+    max-width: 100%;
+    height: auto;
+
+
+}
+
+.logonaam {
+    font: 400 2.6rem/20px "Yeseva one", cursive;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid #4b4e53;
+    padding: .5em 1em;
+    border-radius: 2px;
+    color: #2A2A2A;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 500ms;
+
+
+}
+
+.button:hover {
+    color: #F1F1F1;
+    background-color: #2A2A2A;
+    text-decoration: none;
+
+}
+
+
+/* WAARDEN CARDS
+--------------------------------------------------------*/
+
+.troeven,
+.waardensectie {
+    background-color: #EEEEEE;
+}
+
+.waarde {
+    color: #4b4e53;
+    background-color: #EEEEEE;
+    margin-bottom: 50px;
+
+}
+
+.waarde-body {
+    margin-top: 50px;
+}
+
+.waarde-body>h3 {
+    color: #2A2A2A;
+    font: 300 2rem/1.6 Lato, Arial, sans-serif;
+    text-transform: uppercase;
+
+}
+
+.waardetitel {
+    font: 400 2rem/1.6 Lato, Arial, sans-serif;
+
+    color: #4b4e53;
+    padding: 72px 25px 44px;
+    border-left: 2px solid #4b4e53;
+    text-transform: uppercase;
+}
+
+.fal {
+    font-size: 45px;
+    font-weight: lighter;
+    color: #7e8082
+}
+
+
+/* CONTACTPAGINA
+--------------------------------------------------------*/
+.navbar {
+    border-bottom: #4b4e53 3px solid;
+    opacity: 0.8;
+    background-color: red
+}
+
+.pag-cont {
+    background-color: #FFFFFF
+}
+
+.contacttitel {
+    margin: 40px 0 0 10px;
+    font: 300 0.5rem/1.6 Lato, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #4b4e53;
+}
+
+.streepje {
+    display: inline-block;
+    padding-left: 50px;
+
+    color: #EEEEEE
+}
+
+
+/* CONTACTGEGEVENS */
+
+
+
+
+.contact-icon {
+    position: absolute;
+    top: 5px;
+    left: -65px;
+    color: #7e8082;
+    border-right: 1px solid #7e8082;
+    padding-right: 1em;
+
+
+
+}
+
+.contact-text h3 {
+
+    padding-left: 1em;
+    text-transform: uppercase;
+
+}
+
+
+.contact p {
+
+    margin-left: 1.2em;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.cont-container {
+    padding: 80px 0;
+    margin-left: 125px;
+}
+
+/* CONTACTFORMULIER */
+.contactformuliersectie {
+    padding: 110px 0 0 80px;
+    background-color: #EEEEEE
+}
+
+
+.cont-form-naam {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #7e8082;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.contact-formulier {
+    padding: 30px 0 75px;
+}
+
+/* SHOP BEST SELLERS */
+
+.shop-page {
+    padding: 110px 0 30px 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.bestsellertitel {
+    margin-bottom: 50px;
+}
+
+.bestseller-titel {
+    font-size: 2rem;
+}
+
+.shopitem1 {
+    padding-bottom: 70px;
+}
+
+.shopitem-img {
+    margin-bottom: 25px;
+
+}
+
+.sale-label-cont {
+    position: absolute;
+    top: 1em;
+    left: 5.5em;
+
+
+}
+
+.sale-label {
+    display: inline-block;
+    padding-top: 17px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background: #ffea00;
+    color: #4b4e53;
+}
+
+.shopitem-cont {
+    text-align: center;
+}
+
+.shopitem-prijs {
+    margin-bottom: 20px;
+    color: #4b4e53;
+
+}
+
+/* FOOTER
+--------------------------------------------------------*/
+.footer-cont {
+    padding: 3em 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.footercontainer {
+    margin-top: 2em;
+}
+
+.footer-soc-a a {
+    padding: 1em;
+    color: #4b4e53;
+    text-decoration: none;
+    transition: all .3s ease 0s;
+}
+
+.footer-copy {
+    margin-top: .5em;
+}
+
+/* FORMULES ABO */
+.list-group li i {
+    font-size: 1rem;
+    padding-right: 1em;
+}
+
+.list-group {
+    text-align: center;
+}
+
+.button-bestel {
+    display: inline-block;
+    border: 1px solid #4b4e53;
+    padding: .5em 1em;
+    border-radius: 2px;
+    color: #2A2A2A;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 500ms;
+    background-color: #92F9C1
+}
+
+.button-bestel:hover {
+    color: #F1F1F1;
+    background-color: #2A2A2A;
+    text-decoration: none;
+
+}
+
+.list-group {
+    padding: 1em;
+}
+
+.list-group-item {
+    border: none;
+    font: 500 01rem/1.6 Lato, Arial, sans-serif;
+}
+/* 
+.card-titel-prijs {
+    font: 500 1.5rem/1.6 Lato, Arial, sans-serif;
+} */
+.card-bedrag{
+    display: inline-block;
+    font-size: 7rem;
+    line-height: 7rem;
+    font-weight: 700;
+    color: #4b4e53;
+}
+
+.card-euro{
+display: inline-block;
+margin-right: 5px;
+color: #4b4e53;
+}
+.card-maand{
+    display: inline-block;
+    color: #4b4e53;
+    
+}
+
+/* BREAKPOINTS 
+--------------------------------------------------------*/
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 5rem;
+        padding-top: 0.2em;
+    }
+
+    .pag-cont {
+        padding: 10px 0 0 40px;
+
+    }
+
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+        .mainheader .overlay {
+            height: calc(100vh - 55px);
+        }
+
+
+
+    }
+}
+
+
+@media screen and(max-width: 767px) {
+    .contacttitel {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
