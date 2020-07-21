@@ -18,31 +18,39 @@
 
     <!-- /main nav -->
 
-    <a href="#menu" class="menu" role="button">
+    <a href="#menu" class="menu">
         <span class="fa fa-reorder"></span>
     </a>
+    <!-- <img src="images/logo2.png" alt="" class="logo"> -->
 
-    <nav class="mainnav">
+    <nav class="mainnav" role="mainnav">
         <ul class="links list-unstyled">
-            <li><a href="#section-one" title="">Home</a></li>
-            <li><a href="#section-two" title="">Koffieabonnement</a></li>
-            <li><a href="#section-three" title="">Koffiebonen</a></li>
-            <li><a href="#section-four" title="">Bestellen</a></li>
-            <li><a href="#section-five" title="">Blog</a></li>
-            <li><a href="#section-six" title="">Over ons</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#proefpakket">Proefpakket</a></li>
+            <li><a href="#abonnement">Koffieabonnement</a></li>
+            <li><a href="#single-origin">Koffiebonen SINGLE ORIGIN</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact-cont" title="">Over ons</a></li>
         </ul>
     </nav>
 
     <!-- mainheader -->
-    <header class="mainheader parallax-window" data-parallax="scroll" data-image-src="images/bgimg.jpg">
+    <header class="mainheader parallax-window" data-parallax="scroll" data-image-src="images/hero1.jpg">
 
         <div class="overlay">
-
-            <h1>Louis Paul</h1>
-            <p class="overlay-titel">koffiemaker</p>
+            <blockquote>
+                
+                <p class="blockquote"><q>"De smaakervaring <br>van deze bonen is apart.<br>Perfect voor koffieliefhebbers."</q></p>
+              </blockquote>
+              <div class="mt-30">
+                <a class="button-quote" href="#">BUY NOW</a>
+            </div>
+           <!--   <h1>Louis Paul</h1>
+            <p class="overlay-titel">koffiemaker</p>  -->
 
         </div>
         <!--overlay-->
+        <a href="#proefpakket" class="downbutton"><span class="fa fa-chevron-down"></span></a>
     </header>
 
     <!-- main -->
@@ -52,27 +60,37 @@
     <section id="home-icons" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 icon wow animate__animated animate__fadeInLeftBig" data-wow-duration="2s"
+                <div class="col-md-3 icon wow animate__animated animate__fadeInLeftBig" data-wow-duration="2s"
                     data-wow-delay="200ms">
-                    <img src="icons/coffee.svg" alt="" class="center">
+                   <a href="beste/bestel.html"><img src="icons/coffee.svg" alt="" class="center"></a>
                     <h3 class="icontitel">Koffie</h3>
-                    <p class="iconcont">Lorem ipsum dolor sit amet consectetur,
-                        <br> adipisicing elit.</p>
+                    <p class="iconcont">Elke koffie met een perfect evenwicht. 
+                        <br><span class="bold">SINGLE ORIGIN</span></p>
                 </div>
-                <div class="col-md-4 icon wow animate__animated animate__fadeInLeftBig" data-wow-duration="2s"
-                    data-wow-delay="200ms">
-                    <img src="icons/shopping-cart (2).svg" alt="" class="center">
-                    <h3 class="icontitel">Bestellen</h3>
-                    <p class="iconcont">Lorem ipsum dolor sit amet consectetur,
-                        <br>adipisicing elit.</p>
-                </div>
-                <div class="col-md-4 icon wow animate__animated animate__fadeInLeftBig" data-wow-duration="2s"
+              
+                <div class="col-md-3 icon wow animate__animated animate__fadeInLeftBig" data-wow-duration="2s"
                     data-wow-delay="200Ms">
-                    <img src="icons/info.svg" alt="" class="center">
-                    <h3 class="icontitel">Info</h3>
-                    <p class="iconcont">Lorem ipsum dolor sit amet consectetur,
-                        <br>adipisicing elit.</p>
+                    <a href="bestel/bestel.html"><img src="icons/check-square.svg" alt="" class="center"></a>
+                    <h3 class="icontitel">Smaak</h3>
+                    <p class="iconcont">Elke koffie met een eigen smaakprofiel.
+                        <br><span class="bold">UNIEKE SMAKEN</span></p>
                 </div>
+                <div class="col-md-3 icon wow animate__animated animate__fadeInLeftBig" data-wow-duration="2s"
+                    data-wow-delay="200Ms">
+                    <a href="bestel/bestel.html"><img src="icons/plus-square.svg" alt="" class="center"></a>
+                    <h3 class="icontitel">Karakter</h3>
+                    <p class="iconcont">Heerlijke aroma's, volle body, aangename nasmaak.
+                        <br><span class="bold">UNIEKE BONEN</span></p>
+                </div>
+                <div  class="col-md-3 icon wow animate__animated animate__fadeInLeftBig" data-wow-duration="2s"
+                data-wow-delay="200ms" >
+               
+               <a href="bestel/bestel.html"> <img src="icons/shopping-cart (2).svg" alt="" class="center"></a>
+                <h3 class="icontitel">Bestellen</h3>
+                <p class="iconcont">Levering vanaf 250 gram binnen 2 dagen.
+                    <br><span class="bold">VERSHEIDSGARANTIE</span></p>
+               
+            </div>
             </div>
         </div>
     </section>
@@ -88,14 +106,14 @@
                 <div class="col-md-6 left-50 pr-0 mr-0 pl-5">
 
                     <div class="ads-img-cont wow animate__animated animate__fadeInLeft">
-                        <img src="images/img3.jpg" alt="img" class="img-fluid" width="555" height="447">
+                        <img src="images/img1v.jpg" alt="img" class="img-fluid" width="555" height="447">
                     </div>
 
                 </div>
 
                 <div class="col-md-6 right-50">
                     <div class="text-cont-right">
-                        <div class="title-ad">
+                        <div class="title-ad" id="proefpakket">
                             <span class="logonaam">Louis Paul</span> KOFFIEBONEN<br>
                             <span class="bold">PROEFPAKKET</span>
                         </div>
@@ -103,14 +121,14 @@
                         <div class="text-cont">Sed ut perspiciatis unde omnis iste nat eror acus antium que.
                             Asperiores, ea velit enim labore doloribus.</div>
                         <div class="mt-30">
-                            <a class="button medium thin hover-dark" href="#">BUY NOW</a>
+                            <a class="button medium thin hover-dark" href="bestel/bestel.html">BUY NOW</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 left-50">
                     <div class="text-cont-left">
-                        <div class="title-ad">
+                        <div class="title-ad" id="abonnement">
                             <span class="logonaam">Louis Paul</span> KOFFIEBONEN<br>
                             <span class="bold">ABONNEMENT</span>
                         </div>
@@ -118,7 +136,7 @@
                         <div class="text-cont">Sed ut perspiciatis unde omnis iste nat eror acus antium que.
                             Asperiores, ea velit enim labore doloribus.</div>
                         <div class="mt-30">
-                            <a class="button medium thin hover-dark" href="#">BUY NOW</a>
+                            <a class="button medium thin hover-dark" href="bestel/bestel.html">BUY NOW</a>
                         </div>
                     </div>
                 </div>
@@ -138,30 +156,31 @@
     <div class="shop-page">
         <div class="container">
 
-            <div class="bestsellertitel">
-                <h2 class="bestseller-titel">BEST <span class="bold">SELLERS</span>
+            <div class="bestsellertitel" id="single-origin">
+                <h2 class="bestseller-titel">BEST SELLERS <span class="bold">SINGLE ORIGIN</span>
                 </h2>
             </div>
 
             <div class="row">
 
                 <!-- SHOP Item 1 -->
-                <div class="col-sm-6 col-md-4 col-lg-4 shopitem1">
+                <div class="col-sm-6 col-md-3 col-lg-3 shopitem1">
 
                     <div class="shopitem-img">
-                        <a href="#"><img src="images/img1.jpg" width="370" height="470" alt="img"></a>
+                        <a href="#"><img src="images/img1.jpg" width="310" height="410" alt="img"></a>
                     </div>
                     <div class="sale-label-cont">
                         <span class="sale-label label-danger bg-red">SALE</span>
                     </div>
                     <div class="shopitem-cont">
                         <div class="shopitem-titel mb-2">
-                            <h3><a class="btn shopitem-titel-h3" role="button" href="#">LOUIS PAUL KOFFIE ABONNEMENT</a>
+                            <h3><a class="btn shopitem-titel-h3" role="button" href="#">GUATEMALA EL ZAPOTE</a>
                             </h3>
+                            <p>medium roast</p>
                         </div>
 
                         <div class="shopitem-prijs">
-                            <del>€21.75</del>&nbsp;<strong>€19.95</strong>
+                            <del>&euro;8.80</del>&nbsp;<strong>&euro;7.95</strong>
                         </div>
 
                         <div class="shop-button">
@@ -174,21 +193,22 @@
 
                 </div>
                 <!-- SHOP Item 2 -->
-                <div class="col-sm-6 col-md-4 col-lg-4 shopitem2">
+                <div class="col-sm-6 col-md-3 col-lg-3 shopitem2">
 
                     <div class="shopitem-img">
-                        <a href="#"><img src="images/img2.jpg" width="370" height="470" alt="img"></a>
+                        <a href="#"><img src="images/img2.jpg" width="310" height="410" alt="img"></a>
                     </div>
                     <!--   <div class="sale-label-cont">
                 <span class="sale-label label-danger bg-red">SALE</span>
               </div>   -->
                     <div class="shopitem-cont">
                         <div class="shopitem-titel mb-2">
-                            <h3><a class="btn shopitem-titel-h3" role="button" href="#">LOUIS PAUL PROEFPAKKET</a></h3>
+                            <h3><a class="btn shopitem-titel-h3" role="button" href="#">COSTA RICA TARRAZU</a></h3>
+                            <p>medium roast</p>
                         </div>
 
                         <div class="shopitem-prijs">
-                            <strong>€19.95</strong>
+                            <strong>&euro;8.80</strong>
                         </div>
 
                         <div class="shop-button">
@@ -201,21 +221,50 @@
 
                 </div>
                 <!-- SHOP Item 3 -->
-                <div class="col-sm-6 col-md-4 col-lg-4 shopitem3">
+                <div class="col-sm-6 col-md-3 col-lg-3 shopitem3">
 
                     <div class="shopitem-img">
-                        <a href="#"><img src="images/img1.jpg" width="370" height="470" alt="img"></a>
+                        <a href="#"><img src="images/img1.jpg" width="310" height="410" alt="img"></a>
                     </div>
                     <!--     <div class="sale-label-cont">
                 <span class="sale-label label-danger bg-red">SALE</span>
               </div>  -->
                     <div class="shopitem-cont">
                         <div class="shopitem-titel mb-2">
-                            <h3><a class="btn shopitem-titel-h3" role="button" href="#">LOUIS PAUL KOFFIEBONEN</a></h3>
+                            <h3><a class="btn shopitem-titel-h3" role="button" href="#">PERU EL PALTO</a></h3>
+                            <p>dark roast</p>
                         </div>
 
                         <div class="shopitem-prijs">
-                            <strong>vanaf €5.50</strong>
+                            <strong>&euro;8.80</strong>
+                        </div>
+
+                        <div class="shop-button">
+                            <div class="shop-add-btn-cont">
+                                <a class="button medium gray-light shop-add-btn" href="#">ADD TO CART</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- SHOP Item 4 -->
+                <div class="col-sm-6 col-md-3 col-lg-3 shopitem4">
+
+                    <div class="shopitem-img">
+                        <a href="#"><img src="images/img2.jpg" width="310" height="410" alt="img"></a>
+                    </div>
+                    <!--     <div class="sale-label-cont">
+                <span class="sale-label label-danger bg-red">SALE</span>
+              </div>  -->
+                    <div class="shopitem-cont">
+                        <div class="shopitem-titel mb-2">
+                            <h3><a class="btn shopitem-titel-h3" role="button" href="#">COLOMBIA FINCA SANTAFE</a></h3>
+                            <p>dark roast</p>
+                        </div>
+
+                        <div class="shopitem-prijs">
+                            <strong>&euro;8.80</strong>
                         </div>
 
                         <div class="shop-button">
@@ -238,7 +287,7 @@
     <!-- DIVIDER -->
     <hr class="mt-0 mb-0">
     <!-- ABO SECTION -->
-    <section id="services" class="py-5">
+   <!--  <section id="services" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -353,7 +402,7 @@
             </div>
         </div>
     </section>
-
+ -->
 
 
     <!-- DIVIDER -->
@@ -374,7 +423,7 @@
                             <div class="card-header">
                                 <h5 class="mb-0">
                                     <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
-                                        <i class="fal fa-angle-down"></i> MEER WETEN OVER HET KOFFIEABONNEMENT?
+                                        <i class="fal fa-angle-down"></i> WAT ZIT ER IN HET PROEFPAKKET?
                                     </div>
                                 </h5>
                             </div>
@@ -396,12 +445,12 @@
                             <div class="card-header">
                                 <h5 class="mb-0">
                                     <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
-                                        <i class="fal fa-angle-down"></i> WAT ZIT ER IN HET PROEFPAKKET?
+                                        <i class="fal fa-angle-down"></i> MEER WETEN OVER HET KOFFIEABONNEMENT?
                                     </div>
                                 </h5>
                             </div>
 
-                            <div id="collaps23" class="collapse">
+                            <div id="collapse2" class="collapse">
                                 <div class="card-body">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui,
                                     debitis, sequi dolores nobis mollitia
@@ -471,6 +520,11 @@
         </div>
     </section>
 
+    <!-- IMAGE PARALLAX -->
+    <section id="parallax-sectie" class="parallax-window" data-parallax="scroll" data-image-src="images/bgimg.jpg">
+       <div class="parallax-cont"> <p>Koffie met een helder en uitgebalanceerd karakter.</p>
+        <h2>LOUIS PAUL <span class="parallax-titel">KOFFIEMAKER</span></h2></div>
+    </section>
 
     <!-- WAARDEN/TROEVEN -->
     <section id="troeven" class="waardensectie">
@@ -535,7 +589,7 @@
     </section>
 
     <!-- CONTACTGEGEVENS -->
-    <section class="contact">
+    <section class="contact" id="contact-cont">
 
         <div class="container cont-container">
             <div class="row ml-4 pl-4 mb-4">
