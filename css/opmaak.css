@@ -31,10 +31,15 @@ html {
     overflow-x: hidden;
     /* scrollbalk wegdoen in mobile */
 }
-.clearfix{
+
+.clearfix {
     zoom: 1;
 }
+.mb-80{
+margin-bottom: 120px;
+}
 
+/* .clearfix:after{content: ""; display: block; clear: both;} */
 
 .container {
     max-width: 1400px;
@@ -44,7 +49,14 @@ html {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    
+
+}
+
+
+.clearfix {
+    clear: both;
+    width: 100%;
+    display: block;
 }
 
 .page-section {
@@ -80,6 +92,20 @@ a {
 
 strong {
     font-weight: 700;
+}
+
+.lege-ruimte {
+    height: 180px;
+}
+
+.text-center {
+    text-align: center;
+}
+a.info-link{
+    color: #F1F1F1;
+text-decoration: none;
+
+    transition: all .5s ease-in-out;
 }
 
 /* Navigatie ------------------------------------------- */
@@ -312,8 +338,25 @@ a.downbutton:hover {
 }
 
 
+/* WIE ZIJN WIJ */
+
+#info{
+    background-color:#4b4e53;
+    color:#EEEEEE
+}
+
+.info-titel2{
+    font: 400 2rem/20px "Yeseva one", cursive;
+}
 
 
+.abo-cont3{
+    border-right: 1px solid #7e8082;
+}
+
+.info-cont{
+    font: 300 1.3rem/1.6 Lato, Arial, sans-serif;
+}
 
 
 /* FAQ
@@ -591,13 +634,13 @@ a.downbutton:hover {
 }
 
 .cont-container {
-    padding: 80px 0;
+    padding: 30px 0;
     margin-left: 125px;
 }
 
 /* CONTACTFORMULIER */
 .contactformuliersectie {
-    padding: 110px 0 0 80px;
+    padding: 50px 0 0 80px;
     background-color: #EEEEEE
 }
 
@@ -635,10 +678,7 @@ a.downbutton:hover {
     padding-bottom: 70px;
 }
 
-.shopitem-img {
-    margin-bottom: 25px;
 
-}
 
 .sale-label-cont {
     position: absolute;
@@ -647,6 +687,7 @@ a.downbutton:hover {
 
 
 }
+
 
 .sale-label {
     display: inline-block;
@@ -680,11 +721,9 @@ a.downbutton:hover {
     width: 100%;
     display: block;
     text-align: center;
+    background-color: #fff
 }
 
-.footercontainer {
-    margin-top: 2em;
-}
 
 .footer-soc-a a {
     padding: 1em;
@@ -696,7 +735,13 @@ a.downbutton:hover {
 .footer-copy {
     margin-top: .5em;
 }
+a.footer-link{
+    text-decoration: none;
+    text-align: center;
+    color: #4b4e53;
 
+
+}
 /* FORMULES ABO */
 .list-group li i {
     font-size: 1rem;
@@ -716,7 +761,7 @@ a.downbutton:hover {
     text-transform: uppercase;
     font-weight: 400;
     transition: all 500ms;
-    background-color: #92F9C1
+    background-color: #EEEEEE;
 }
 
 .button-bestel:hover {
@@ -770,6 +815,10 @@ a.downbutton:hover {
     .pag-cont {
         padding: 10px 0 0 40px;
 
+    }
+
+    .lege-ruimte {
+        height: 110px;
     }
 
 }
@@ -847,6 +896,15 @@ h1 {
     visibility: visible;
 }
 
+@media screen and (min-width: 375px) {
+    .wie-is-titel {
+
+        font: 400 2.6rem/50px "Yeseva one", cursive;
+        color: #4b4e53;
+    }
+}
+
+
 /* BESTELPAGINA */
 
 .bestel-cont {
@@ -858,6 +916,17 @@ h1 {
     font: 500 2rem/1.6 Lato, Arial, sans-serif;
     margin-top: 2em;
     margin-bottom: 1em;
+
+}
+
+.shop-info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.mb-30{
+    margin-bottom: 30px;
+    
 }
 
 
@@ -886,13 +955,15 @@ h1 {
 
 /* CONTENT IN BESTELPAGINA */
 
-.mt-0{
+.mt-0 {
     margin-top: 0;
 }
-.mb-30{
+
+.mb-30 {
     margin-bottom: 2em;
 }
-.item-price{
+
+.item-price {
     padding-left: 1em;
     font-size: 1.5rem;
 }
@@ -903,10 +974,12 @@ select.input-border {
     border: 1px solid #dedede;
     padding: 9px 20px 9px 10px;
 }
+
 .select-md {
     font-size: 12px;
     text-transform: uppercase;
 }
+
 option {
     font-weight: normal;
     display: block;
@@ -914,6 +987,7 @@ option {
     min-height: 1.2em;
     padding: 0px 2px 1px;
 }
+
 
 /* IN WINKELMAND */
 
@@ -926,6 +1000,7 @@ option {
     color: #fff;
     background-color: #535961;
 }
+
 .button.medium {
     padding: 10px 37px 10px 37px;
     display: inline-block;
@@ -959,6 +1034,7 @@ option {
     text-decoration: none;
 
 }
+
 
 .list-group {
     padding: 1em;
@@ -996,7 +1072,7 @@ option {
 
 /* PRIJSTABEL OP BESTELPAGINA */
 
-.mb-50{
+.mb-50 {
     margin-bottom: 50px;
 }
 
@@ -1005,22 +1081,234 @@ option {
 
 .pricing-table-4 {
     margin: 0 auto;
-  
+
 }
+
 .pt-h4-container {
     margin: 0;
-    padding: 80px 20px 25px 20px;
+  
     border-bottom: none;
     font: 700 3rem/1.6 Lato, Arial, sans-serif;
 }
+
 .pricing-table-4 ul {
     margin: 75px 55px 40px 55px;
     padding: 0;
 }
+
 .prijstabel-proefpakket,
-.prijstabel-abonnement{
+.prijstabel-abonnement {
     margin: 0 7em;
     padding-bottom: 1em;
-    background-color:#EEEEEE;
+    background-color: #EEEEEE;
     text-align: left;
+}
+
+
+/* OVER ONS PAGINA */
+.overons-titel-cont {
+    padding-top: 80px;
+    padding-bottom: 65px;
+    background-color: #EEEEEE;
+}
+
+.overons-titel-img {
+    width: 100%;
+    display: block;
+    position: relative;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.overons-titel {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #EEEEEE;
+}
+
+.overons-image {
+    margin: 0 auto;
+}
+
+
+.overons-subtitel {
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #EEEEEE;
+}
+
+.overons-cont {
+    padding-top: 50px;
+}
+
+.overons-cont1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.overons-cont1 h3 {
+    font: 700 1rem/1.6 Lato, Arial, sans-serif;
+
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.overons-cont1 span {
+    font-size: 14px;
+    font-style: normal;
+
+}
+    /* ABONNEMENT PAGINA */
+    .abo-cont{
+        text-align: center;
+        color:#4b4e53;
+    }
+
+   h2.abo-titel{
+        font: 300 3rem/1.6 Lato, Arial, sans-serif;
+       padding-top: 50px;
+        padding-bottom: 10px;
+        
+    }
+    span.abo-subtitel-nummer{
+        content: "1";
+    }
+    
+    span.abo-subtitel-nummer{
+        padding-top: 0;
+        background-repeat: no-repeat;
+        border: 1px solid;
+        border-radius: 130px;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 23px;
+       
+        margin-right: 12px;
+        line-height: 1.2;
+    
+    }
+    .abo-subtitel{
+        font: 300 1.5rem/1.6 Lato, Arial, sans-serif;
+        padding-top: 50px;
+         padding-bottom: 50px;
+      
+    }
+    strong.item-price{
+        padding-left: 
+        5.5em;
+    }
+
+    .text-box{
+        display: table-cell;
+        width: 25%;
+        padding: 10px;
+    }
+   .col-equal{
+       width: 100%;
+       height: 150px;
+       font-size: 11px;
+   }
+   #img-abo1,
+   #img-abo2,
+   #img-abo3,
+   #img-abo4{
+    display: block;
+    margin: auto;
+}
+a.button{
+    border: 1px solid #dedede;
+    padding: 4px 7px;
+    font-size: 11px;
+}
+a.button:hover{
+    background-color: #7e8082;
+    color: #EEEEEE;
+}
+.input-counter{
+    font-size: 10px
+}
+h3.verzending-titel{
+  font-weight: 700;
+}
+h3#koffiesoort.abo-subtitel{
+    padding-bottom: 1em;
+}
+
+/* KLANTENSERVICE */
+.mainfooter{
+    text-align: center;
+    margin: 2em 0;
+}
+/* Privacy -----------------------------------------------  */
+
+body#privacy header.mainheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    overflow: hidden;
+    background-position: center center;
+}
+
+
+
+h1.privacy{
+    font-size: 2rem;
+}
+
+body#privacy h2 {
+    font-size: 1.4rem;
+    margin: 1em 0;
+}
+
+body#privacy h3 {
+    font-size: 1rem;
+    margin: 1em 0 0;
+}
+
+section#privacy {
+    padding: 8em 2em;
+    font: 300 1rem/1.6 Lato, Arial, sans-serif;
+}
+
+section#privacy ul {
+    margin: 1em;
+    list-style-type: disc;
+}
+
+section#privacy ul li {
+    line-height: 2;
+}
+
+@media screen and (min-width: 667px) {
+    body#privacy header.mainheader {
+        height: 50vh;
+    }
+
+    body#privacy header.mainheader img {
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section#privacy {
+        padding: 0 2em 8em;
+    }
 }

@@ -1,5 +1,3 @@
-
-
 //menu wegklappen bij scrollen
 
 $(document).ready(function () {
@@ -40,8 +38,6 @@ btn.on("click", function (e) {
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
 
-
-
 /* wow = new WOW(
   {
   boxClass:     'wow',      // default
@@ -52,3 +48,7 @@ btn.on("click", function (e) {
 }
 )
 wow.init(); */
+new WOW().init();
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
