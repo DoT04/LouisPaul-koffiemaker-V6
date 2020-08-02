@@ -363,7 +363,7 @@ a.downbutton:hover {
 /* --------------------------------------------------------*/
 
 .faq-section {
-    padding: 110px 0;
+    padding: 80px 0;
     background-color: #4b4e53;
 
 
@@ -714,6 +714,34 @@ a.downbutton:hover {
     padding-bottom: 0;
 }
 
+/* NEWSLETTER */
+.newsletter {
+    padding: 40px 0;
+    background: #4b4e53;
+    }
+    
+    .newsletter .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+ }
+    .newsletter .content h2 {
+    color: #EEEEEE;
+    margin-bottom: 40px; }
+
+    .newsletter .content .form-control {
+    height: 40px;
+    border-color: #ffffff;
+    border-radius:0;
+    margin-right: 1em;
+    }
+    .newsletter .content.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #EEEEEE;
+    }
+  
 /* FOOTER
 --------------------------------------------------------*/
 .footer-cont {
@@ -1309,6 +1337,60 @@ section#privacy ul li {
 
 @media screen and (min-width: 768px) {
     section#privacy {
+        padding: 0 2em 8em;
+    }
+}
+/* ALGEMENE VOORWAARDEN */
+
+body#algvw header.mainheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    overflow: hidden;
+    background-position: center center;
+}
+
+
+
+h1.algvw{
+    font-size: 2rem;
+}
+
+section#algvw h2 {
+   
+    margin: 1em 0;
+    font: 700 1rem/1.6 Lato, Arial, sans-serif;
+}
+
+
+
+section#algvw {
+    padding: 8em 2em;
+    font: 300 1rem/1.6 Lato, Arial, sans-serif;
+}
+
+section#algvw ul {
+    margin: 1em;
+    list-style-type: disc;
+}
+
+section#algvw ul li {
+    line-height: 2;
+}
+
+@media screen and (min-width: 667px) {
+    body#algvw header.mainheader {
+        height: 50vh;
+    }
+
+    body#algvw header.mainheader img {
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section#algvw {
         padding: 0 2em 8em;
     }
 }
